@@ -1,0 +1,17 @@
+ALGORITHM produits vectorielles
+VAR
+    vect1 :  ARRAY_OF INTEGER[n]
+    vect2 :  ARRAY_OF INTEGER[n]
+    prod_vect : ARRAY_OF INTEGER[n]
+    i,j:INTEGER:=0
+    n: INTEGER
+BEGIN
+    Read(vect1)
+    Read(vect2)
+    FOR i FROM 0 TO n STEP 1  DO
+    FOR j FROM 0 TO n STEP 1  DO
+       prod_vect:=vect1[i]*vect2[j]     
+    END_FOR  
+    END_FOR
+    Write ("le produits vectorielles des deux vecteurs 1 et 2 est",prod_vect)
+END
